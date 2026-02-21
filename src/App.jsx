@@ -53,10 +53,10 @@ function GKLogo({ size = 36 }) {
 }
 
 const movies = [
-  { id:1, title:"Taqdeer", sub:"Divine Decree", genre:"Drama", duration:"2h 10m", lang:"Hausa / English", rating:4.7, badge:"FEATURED", badgeColor:"#a855f7", gradient:"linear-gradient(135deg,#1a0533,#4a0080,#6b00cc)", posterLetter:"T", showtimes:[{time:"14:00",type:"Standard"},{time:"17:30",type:"VIP"},{time:"20:00",type:"Standard"}], dome:"Dome 1", price:2000 },
-  { id:2, title:"Hakeem", sub:"Seeking Justice", genre:"Action", duration:"1h 58m", lang:"English", rating:4.6, badge:"BLOCKBUSTER", badgeColor:"#f97316", gradient:"linear-gradient(135deg,#0f0c29,#302b63,#1a1a4e)", posterLetter:"H", showtimes:[{time:"15:30",type:"IMAX"},{time:"18:00",type:"Standard"},{time:"21:30",type:"VIP"}], dome:"Dome 1", price:2000 },
-  { id:3, title:"Rigar Aro", sub:"Kamal Films International", genre:"Drama", duration:"2h 00m", lang:"Hausa", rating:4.5, badge:"NOW SHOWING", badgeColor:"#22c55e", gradient:"linear-gradient(135deg,#0d1f0d,#1a4a1a,#0a2e0a)", posterLetter:"R", showtimes:[{time:"16:00",type:"Standard"},{time:"19:30",type:"VIP"}], dome:"Dome 1", price:2000 },
-  { id:4, title:"Varanasi", sub:"SS Rajamouli", genre:"Epic", duration:"2h 45m", lang:"Telugu / Hindi / English", rating:4.9, badge:"EPIC", badgeColor:"#a855f7", gradient:"linear-gradient(135deg,#1a0a00,#7a3000,#c45000)", posterLetter:"V", showtimes:[{time:"13:00",type:"IMAX"},{time:"17:00",type:"Standard"},{time:"21:00",type:"VIP"}], dome:"Dome 1", price:2000 },
+  { id:1, title:"Taqdeer", sub:"Divine Decree", genre:"Drama", duration:"2h 10m", lang:"Hausa / English", rating:4.7, badge:"FEATURED", badgeColor:"#a855f7", gradient:"linear-gradient(135deg,#1a0533,#4a0080,#6b00cc)", posterLetter:"T", poster:"/taqdeer.jpg", showtimes:[{time:"14:00",type:"Standard"},{time:"17:30",type:"VIP"},{time:"20:00",type:"Standard"}], dome:"Dome 1", price:2000 },
+  { id:2, title:"Hakeem", sub:"Seeking Justice", genre:"Action", duration:"1h 58m", lang:"English", rating:4.6, badge:"BLOCKBUSTER", badgeColor:"#f97316", gradient:"linear-gradient(135deg,#0f0c29,#302b63,#1a1a4e)", posterLetter:"H", poster:"/hakeem.jpg", showtimes:[{time:"15:30",type:"IMAX"},{time:"18:00",type:"Standard"},{time:"21:30",type:"VIP"}], dome:"Dome 1", price:2000 },
+  { id:3, title:"Rigar Aro", sub:"Kamal Films International", genre:"Drama", duration:"2h 00m", lang:"Hausa", rating:4.5, badge:"NOW SHOWING", badgeColor:"#22c55e", gradient:"linear-gradient(135deg,#0d1f0d,#1a4a1a,#0a2e0a)", posterLetter:"R", poster:"/rigar-aro.jpg", showtimes:[{time:"16:00",type:"Standard"},{time:"19:30",type:"VIP"}], dome:"Dome 1", price:2000 },
+  { id:4, title:"Varanasi", sub:"SS Rajamouli", genre:"Epic", duration:"2h 45m", lang:"Telugu / Hindi / English", rating:4.9, badge:"EPIC", badgeColor:"#a855f7", gradient:"linear-gradient(135deg,#1a0a00,#7a3000,#c45000)", posterLetter:"V", poster:"/varanasi.jpg", showtimes:[{time:"13:00",type:"IMAX"},{time:"17:00",type:"Standard"},{time:"21:00",type:"VIP"}], dome:"Dome 1", price:2000 },
 ];
 
 const allReviews = [
@@ -69,18 +69,18 @@ const allReviews = [
 ];
 
 const snackItems = [
-  { id:"sp", name:"Small Popcorn", desc:"Freshly popped, butter or plain", price:1500, icon:"🍿" },
-  { id:"lp", name:"Large Popcorn", desc:"Shareable size with extra butter", price:3000, icon:"🍿" },
-  { id:"cn", name:"Cheesy Nachos", desc:"Tortilla chips with melted cheese & salsa", price:3500, icon:"🧀" },
-  { id:"bb", name:"Beef Burger", desc:"Double patty with chips", price:4200, icon:"🍔" },
-  { id:"sl", name:"Slushie", desc:"Blue Raspberry / Strawberry", price:1500, icon:"🥤" },
-  { id:"pc", name:"Popcorn Combo", desc:"Large Popcorn + Drink", price:3500, icon:"🎉" },
+  { id:"sp", name:"Small Popcorn", desc:"Freshly popped, butter or plain", price:1500, icon:"🍿", img:"https://images.unsplash.com/photo-1578849278619-e73505e9610f?w=400&q=80" },
+  { id:"lp", name:"Large Popcorn", desc:"Shareable size with extra butter", price:3000, icon:"🍿", img:"https://images.unsplash.com/photo-1585647347483-22b66260dfff?w=400&q=80" },
+  { id:"cn", name:"Cheesy Nachos", desc:"Tortilla chips with melted cheese & salsa", price:3500, icon:"🧀", img:"https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=400&q=80" },
+  { id:"bb", name:"Beef Burger", desc:"Double patty with chips", price:4200, icon:"🍔", img:"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80" },
+  { id:"sl", name:"Slushie", desc:"Blue Raspberry / Strawberry", price:1500, icon:"🥤", img:"https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&q=80" },
+  { id:"pc", name:"Popcorn Combo", desc:"Large Popcorn + Drink", price:3500, icon:"🎉", img:"https://images.unsplash.com/photo-1621188988909-fbef0a88dc04?w=400&q=80" },
 ];
 
 const canteen = [
-  { name:"Popcorn Combo", desc:"Large Popcorn + Drink", price:"₦3,500", color:"#FFD700" },
-  { name:"Beef Burger", desc:"Double Patty + Chips", price:"₦4,200", color:"#f97316" },
-  { name:"Slushie", desc:"Blue Raspberry", price:"₦1,500", color:"#3b82f6" },
+  { name:"Popcorn Combo", desc:"Large Popcorn + Drink", price:"₦3,500", color:"#FFD700", img:"https://images.unsplash.com/photo-1585647347483-22b66260dfff?w=400&q=80" },
+  { name:"Beef Burger", desc:"Double Patty + Chips", price:"₦4,200", color:"#f97316", img:"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80" },
+  { name:"Slushie", desc:"Blue Raspberry", price:"₦1,500", color:"#3b82f6", img:"https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&q=80" },
 ];
 
 // ── FOOD MENU DATA ──
@@ -88,25 +88,25 @@ const foodCategories = ["Nigerian Classics", "Indo-Nigerian Fusion", "Cinema Sna
 
 const foodMenu = {
   "Nigerian Classics": [
-    { id:"f1", name:"Suya Platter", desc:"Spicy grilled beef skewers with onions & yaji", size:"Small (4 sticks)", price:3500, emoji:"🍢", badge:"Bestseller", badgeColor:"#f97316" },
-    { id:"f2", name:"Pounded Yam + Egusi Soup", desc:"With assorted meats & fish", size:"Serves 1–2", price:4800, emoji:"🍲", badge:null },
-    { id:"f3", name:"Jollof Rice Special", desc:"Smoky party jollof with chicken", size:"Regular", price:3200, emoji:"🍛", badge:"Fan Fave", badgeColor:"#FFD700" },
-    { id:"f4", name:"Pepper Soup", desc:"Goat / Chicken / Catfish — spicy & aromatic", size:"Medium bowl", price:3800, emoji:"🍵", badge:null },
-    { id:"f5", name:"Asun", desc:"Spicy barbecued goat meat", size:"Small portion", price:4200, emoji:"🥩", badge:null },
+    { id:"f1", name:"Suya Platter", desc:"Spicy grilled beef skewers with onions & yaji", size:"Small (4 sticks)", price:3500, emoji:"🍢", img:"https://images.unsplash.com/photo-1624300629298-e9de39c13be5?w=400&q=80", badge:"Bestseller", badgeColor:"#f97316" },
+    { id:"f2", name:"Pounded Yam + Egusi Soup", desc:"With assorted meats & fish", size:"Serves 1–2", price:4800, emoji:"🍲", img:"https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=400&q=80", badge:null },
+    { id:"f3", name:"Jollof Rice Special", desc:"Smoky party jollof with chicken", size:"Regular", price:3200, emoji:"🍛", img:"https://images.unsplash.com/photo-1587116861219-230ac19df100?w=400&q=80", badge:"Fan Fave", badgeColor:"#FFD700" },
+    { id:"f4", name:"Pepper Soup", desc:"Goat / Chicken / Catfish — spicy & aromatic", size:"Medium bowl", price:3800, emoji:"🍵", img:"https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80", badge:null },
+    { id:"f5", name:"Asun", desc:"Spicy barbecued goat meat", size:"Small portion", price:4200, emoji:"🥩", img:"https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80", badge:null },
   ],
   "Indo-Nigerian Fusion": [
-    { id:"f6", name:"Beef Burger", desc:"Double patty with chips & coleslaw", size:"Double Patty + Chips", price:4200, emoji:"🍔", badge:"Bestseller", badgeColor:"#f97316" },
-    { id:"f7", name:"Chicken Shawarma", desc:"Grilled chicken, veggies, garlic sauce in wrap", size:"Full wrap", price:2800, emoji:"🌯", badge:null },
-    { id:"f8", name:"Coconut Rice + Grilled Fish", desc:"Fragrant coconut rice with whole tilapia", size:"Serves 1", price:4500, emoji:"🐟", badge:"Fan Fave", badgeColor:"#FFD700" },
-    { id:"f9", name:"Spaghetti Jollof", desc:"Spaghetti cooked in rich tomato pepper sauce", size:"Regular", price:2500, emoji:"🍝", badge:null },
+    { id:"f6", name:"Beef Burger", desc:"Double patty with chips & coleslaw", size:"Double Patty + Chips", price:4200, emoji:"🍔", img:"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80", badge:"Bestseller", badgeColor:"#f97316" },
+    { id:"f7", name:"Chicken Shawarma", desc:"Grilled chicken, veggies, garlic sauce in wrap", size:"Full wrap", price:2800, emoji:"🌯", img:"https://images.unsplash.com/photo-1561651823-34feb02f2c28?w=400&q=80", badge:null },
+    { id:"f8", name:"Coconut Rice + Grilled Fish", desc:"Fragrant coconut rice with whole tilapia", size:"Serves 1", price:4500, emoji:"🐟", img:"https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&q=80", badge:"Fan Fave", badgeColor:"#FFD700" },
+    { id:"f9", name:"Spaghetti Jollof", desc:"Spaghetti cooked in rich tomato pepper sauce", size:"Regular", price:2500, emoji:"🍝", img:"https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&q=80", badge:null },
   ],
   "Cinema Snacks": [
-    { id:"f10", name:"Popcorn Combo", desc:"Large Popcorn + your choice of drink", size:"Large", price:3500, emoji:"🍿", badge:"Popular", badgeColor:"#a855f7" },
-    { id:"f11", name:"Small Popcorn", desc:"Freshly popped, butter or plain", size:"Small", price:1500, emoji:"🍿", badge:null },
-    { id:"f12", name:"Large Popcorn", desc:"Shareable size with extra butter", size:"Large", price:3000, emoji:"🍿", badge:null },
-    { id:"f13", name:"Cheesy Nachos", desc:"Tortilla chips with melted cheese & salsa", size:"Regular", price:3500, emoji:"🧀", badge:null },
-    { id:"f14", name:"Slushy", desc:"Blue Raspberry / Strawberry / Mango", size:"Large cup", price:1500, emoji:"🥤", badge:null },
-    { id:"f15", name:"Hot Dog", desc:"Beef frankfurter in toasted bun with toppings", size:"Single", price:2000, emoji:"🌭", badge:null },
+    { id:"f10", name:"Popcorn Combo", desc:"Large Popcorn + your choice of drink", size:"Large", price:3500, emoji:"🍿", img:"https://images.unsplash.com/photo-1585647347483-22b66260dfff?w=400&q=80", badge:"Popular", badgeColor:"#a855f7" },
+    { id:"f11", name:"Small Popcorn", desc:"Freshly popped, butter or plain", size:"Small", price:1500, emoji:"🍿", img:"https://images.unsplash.com/photo-1578849278619-e73505e9610f?w=400&q=80", badge:null },
+    { id:"f12", name:"Large Popcorn", desc:"Shareable size with extra butter", size:"Large", price:3000, emoji:"🍿", img:"https://images.unsplash.com/photo-1621188988909-fbef0a88dc04?w=400&q=80", badge:null },
+    { id:"f13", name:"Cheesy Nachos", desc:"Tortilla chips with melted cheese & salsa", size:"Regular", price:3500, emoji:"🧀", img:"https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=400&q=80", badge:null },
+    { id:"f14", name:"Slushy", desc:"Blue Raspberry / Strawberry / Mango", size:"Large cup", price:1500, emoji:"🥤", img:"https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&q=80", badge:null },
+    { id:"f15", name:"Hot Dog", desc:"Beef frankfurter in toasted bun with toppings", size:"Single", price:2000, emoji:"🌭", img:"https://images.unsplash.com/photo-1612392062126-d7f0b10c2810?w=400&q=80", badge:null },
   ],
 };
 
@@ -184,8 +184,8 @@ function TurfPage({ setPage, onBook }) {
   const p = r.pad;
   const [selDay, setSelDay] = useState(0);
   const turfs = [
-    { id:1, name:"Green Turf Court", type:"Football", size:"5-a-Side", players:"Up to 20 players", price:30000, duration:"90 minutes", features:["⚽ Artificial Grass","💡 Floodlights","🚿 Changing Rooms","🅿️ Free Parking"], color:"#22c55e", slots:turfSlots },
-    { id:2, name:"Arena Pitch B", type:"Football", size:"7-a-Side", players:"Up to 14 players", price:25000, duration:"90 minutes", features:["⚽ Artificial Grass","💡 Floodlights","🚿 Changing Rooms"], color:"#3b82f6", slots:turfSlots.slice(1) },
+    { id:1, name:"Green Turf Court", type:"Football", size:"5-a-Side", players:"Up to 20 players", price:30000, duration:"90 minutes", features:["⚽ Artificial Grass","💡 Floodlights","🚿 Changing Rooms","🅿️ Free Parking"], color:"#22c55e", slots:turfSlots, img:"https://images.unsplash.com/photo-1624880357913-a8539238245b?w=800&q=80" },
+    { id:2, name:"Arena Pitch B", type:"Football", size:"7-a-Side", players:"Up to 14 players", price:25000, duration:"90 minutes", features:["⚽ Artificial Grass","💡 Floodlights","🚿 Changing Rooms"], color:"#3b82f6", slots:turfSlots.slice(1), img:"https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=800&q=80" },
   ];
   const [selTurf, setSelTurf] = useState(turfs[0]);
   const [selSlot, setSelSlot] = useState(null);
@@ -207,12 +207,13 @@ function TurfPage({ setPage, onBook }) {
           <div key={t.id} onClick={()=>{setSelTurf(t);setSelSlot(null);}}
             style={{background:"#18181b",border:`2px solid ${selTurf.id===t.id?t.color:"#27272a"}`,borderRadius:16,marginBottom:12,overflow:"hidden",cursor:"pointer"}}>
             {/* Banner */}
-            <div style={{height:120,background:`linear-gradient(135deg,${t.color}33,${t.color}11)`,position:"relative",display:"flex",alignItems:"flex-end",padding:12}}>
-              <div style={{position:"absolute",top:10,right:10,background:t.color,color:"white",fontSize:10,fontWeight:700,padding:"3px 10px",borderRadius:20}}>⚽ {t.type}</div>
-              <div style={{fontSize:60,position:"absolute",right:16,top:"50%",transform:"translateY(-50%)",opacity:0.2}}>⚽</div>
-              <div>
+            <div style={{height:140,position:"relative",display:"flex",alignItems:"flex-end",padding:12,overflow:"hidden"}}>
+              <img src={t.img} alt={t.name} style={{position:"absolute",inset:0,width:"100%",height:"100%",objectFit:"cover"}}/>
+              <div style={{position:"absolute",inset:0,background:`linear-gradient(to top,rgba(0,0,0,0.8),${t.color}33,transparent)`}}/>
+              <div style={{position:"absolute",top:10,right:10,background:t.color,color:"white",fontSize:10,fontWeight:700,padding:"3px 10px",borderRadius:20,zIndex:1}}>⚽ {t.type}</div>
+              <div style={{position:"relative",zIndex:1}}>
                 <div style={{color:"white",fontWeight:700,fontSize:18}}>{t.name}</div>
-                <div style={{color:"#9ca3af",fontSize:12}}>{t.duration} • {t.players} • Kano, NG</div>
+                <div style={{color:"#d1d5db",fontSize:12}}>{t.duration} • {t.players} • Kano, NG</div>
               </div>
             </div>
             <div style={{padding:"10px 12px"}}>
@@ -395,9 +396,10 @@ function TurfConfirmPage({ booking, customer, onHome }) {
         </div>
 
         <div style={{background:"#18181b",borderRadius:20,overflow:"hidden",border:"1px solid #27272a",marginBottom:16}}>
-          <div style={{height:80,background:"linear-gradient(135deg,#0d2e0d,#1a5a1a)",display:"flex",alignItems:"center",padding:16,gap:12,position:"relative"}}>
-            <div style={{fontSize:40,opacity:0.3,position:"absolute",right:16}}>⚽</div>
-            <div>
+          <div style={{height:100,position:"relative",display:"flex",alignItems:"center",padding:16,gap:12,overflow:"hidden"}}>
+            <img src="https://images.unsplash.com/photo-1624880357913-a8539238245b?w=800&q=80" alt="Turf" style={{position:"absolute",inset:0,width:"100%",height:"100%",objectFit:"cover"}}/>
+            <div style={{position:"absolute",inset:0,background:"linear-gradient(to right,rgba(0,0,0,0.85),rgba(0,0,0,0.3))"}}/>
+            <div style={{position:"relative",zIndex:1}}>
               <div style={{color:"white",fontWeight:700,fontSize:18}}>{booking.turf.name}</div>
               <div style={{color:"#22c55e",fontSize:12}}>Green Turf • Kano</div>
             </div>
@@ -475,11 +477,14 @@ function GamesPage({ setPage, onBook }) {
       </div>
 
       {/* Banner */}
-      <div style={{margin:"0 16px 16px",background:`linear-gradient(135deg,${selCat===0?"#1a0520,#4a1060":"#0a0a2e,#1a1a6e"})`,borderRadius:16,padding:20,position:"relative",overflow:"hidden",border:"1px solid rgba(236,72,153,0.2)"}}>
-        <div style={{position:"absolute",right:-10,top:-10,fontSize:80,opacity:0.15}}>{selCat===0?"🎱":"🎮"}</div>
-        <div style={{color:"#ec4899",fontSize:10,fontWeight:700,letterSpacing:2,marginBottom:6}}>{selCat===0?"SNOOKER TABLES":"VIDEO GAMES"}</div>
-        <div style={{color:"white",fontWeight:700,fontSize:22,marginBottom:4}}>{selCat===0?"Premium Tables":"PS5 & VR Zone"}</div>
-        <div style={{color:"#9ca3af",fontSize:13}}>{selCat===0?"Professional full-size snooker tables":"Latest consoles, VR headsets & Retro Arcade"}</div>
+      <div style={{margin:"0 16px 16px",borderRadius:16,position:"relative",overflow:"hidden",border:"1px solid rgba(236,72,153,0.2)",height:120}}>
+        <img src={selCat===0?"https://images.unsplash.com/photo-1615213612138-4d1195b1c0e1?w=800&q=80":"https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=800&q=80"} alt={selCat===0?"Snooker":"Gaming"} style={{position:"absolute",inset:0,width:"100%",height:"100%",objectFit:"cover"}}/>
+        <div style={{position:"absolute",inset:0,background:"linear-gradient(to right,rgba(0,0,0,0.88),rgba(0,0,0,0.3))"}}/>
+        <div style={{position:"relative",zIndex:1,padding:20}}>
+          <div style={{color:"#ec4899",fontSize:10,fontWeight:700,letterSpacing:2,marginBottom:6}}>{selCat===0?"SNOOKER TABLES":"VIDEO GAMES"}</div>
+          <div style={{color:"white",fontWeight:700,fontSize:22,marginBottom:4}}>{selCat===0?"Premium Tables":"PS5 & VR Zone"}</div>
+          <div style={{color:"#d1d5db",fontSize:13}}>{selCat===0?"Professional full-size snooker tables":"Latest consoles, VR headsets & Retro Arcade"}</div>
+        </div>
       </div>
 
       {/* Duration */}
@@ -649,9 +654,10 @@ function GamesConfirmPage({ booking, customer, onHome }) {
         </div>
 
         <div style={{background:"#18181b",borderRadius:20,overflow:"hidden",border:"1px solid #27272a",marginBottom:16}}>
-          <div style={{height:80,background:"linear-gradient(135deg,#1a0520,#3d0d4e)",display:"flex",alignItems:"center",padding:16,gap:12,position:"relative"}}>
-            <div style={{fontSize:50,opacity:0.2,position:"absolute",right:16}}>{booking.category==="Snooker Table"?"🎱":"🎮"}</div>
-            <div>
+          <div style={{height:100,position:"relative",display:"flex",alignItems:"center",padding:16,gap:12,overflow:"hidden"}}>
+            <img src={booking.category==="Snooker Table"?"https://images.unsplash.com/photo-1615213612138-4d1195b1c0e1?w=800&q=80":"https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=800&q=80"} alt={booking.category} style={{position:"absolute",inset:0,width:"100%",height:"100%",objectFit:"cover"}}/>
+            <div style={{position:"absolute",inset:0,background:"linear-gradient(to right,rgba(0,0,0,0.85),rgba(0,0,0,0.3))"}}/>
+            <div style={{position:"relative",zIndex:1}}>
               <div style={{color:"white",fontWeight:700,fontSize:18}}>{booking.category}</div>
               <div style={{color:"#ec4899",fontSize:12}}>Games & Lounge • Gidan Kallo</div>
             </div>
@@ -711,7 +717,7 @@ function FoodPage({ setPage, cart, setCart }) {
     });
   };
 
-  const todaySpecial = { title:"Couple Date Night", sub:"Bundle — Save ₦2,000 tonight", bg:"linear-gradient(135deg,#1a0a00,#7a2000)", emoji:"🕯️" };
+  const todaySpecial = { title:"Couple Date Night", sub:"Bundle — Save ₦2,000 tonight", bg:"linear-gradient(135deg,#1a0a00,#7a2000)", emoji:"🕯️", img:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" };
 
   return (
     <div style={{paddingBottom:r.isMobile?100:120}}>
@@ -731,14 +737,17 @@ function FoodPage({ setPage, cart, setCart }) {
       </div>
 
       {/* Today's Special Banner */}
-      <div style={{margin:"0 16px 16px",background:todaySpecial.bg,borderRadius:18,overflow:"hidden",position:"relative",padding:"18px 16px",border:"1px solid rgba(255,215,0,0.2)"}}>
-        <div style={{position:"absolute",right:-10,top:-10,fontSize:80,opacity:0.15}}>{todaySpecial.emoji}</div>
-        <div style={{background:"rgba(255,100,0,0.85)",borderRadius:20,padding:"3px 12px",display:"inline-flex",alignItems:"center",gap:5,marginBottom:8}}>
-          <span style={{fontSize:13}}>🔥</span>
-          <span style={{color:"white",fontSize:11,fontWeight:700}}>TODAY'S SPECIAL</span>
+      <div style={{margin:"0 16px 16px",borderRadius:18,overflow:"hidden",position:"relative",padding:"18px 16px",border:"1px solid rgba(255,215,0,0.2)",minHeight:110}}>
+        <img src={todaySpecial.img} alt="Today's Special" style={{position:"absolute",inset:0,width:"100%",height:"100%",objectFit:"cover"}}/>
+        <div style={{position:"absolute",inset:0,background:"linear-gradient(to right,rgba(0,0,0,0.9),rgba(0,0,0,0.4))"}}/>
+        <div style={{position:"relative",zIndex:1}}>
+          <div style={{background:"rgba(255,100,0,0.85)",borderRadius:20,padding:"3px 12px",display:"inline-flex",alignItems:"center",gap:5,marginBottom:8}}>
+            <span style={{fontSize:13}}>🔥</span>
+            <span style={{color:"white",fontSize:11,fontWeight:700}}>TODAY'S SPECIAL</span>
+          </div>
+          <div style={{color:"white",fontWeight:700,fontSize:22,lineHeight:1.2,marginBottom:4}}>{todaySpecial.title}</div>
+          <div style={{color:"#d1d5db",fontSize:13}}>{todaySpecial.sub}</div>
         </div>
-        <div style={{color:"white",fontWeight:700,fontSize:22,lineHeight:1.2,marginBottom:4}}>{todaySpecial.title}</div>
-        <div style={{color:"#d1d5db",fontSize:13}}>{todaySpecial.sub}</div>
       </div>
 
       {/* Category tabs */}
@@ -764,8 +773,8 @@ function FoodPage({ setPage, cart, setCart }) {
                 </div>
               )}
               {/* Image area */}
-              <div style={{height:110,background:`linear-gradient(135deg,#1a1a1a,#27272a)`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:56,position:"relative"}}>
-                {item.emoji}
+              <div style={{height:110,background:`linear-gradient(135deg,#1a1a1a,#27272a)`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:56,position:"relative",overflow:"hidden"}}>
+                {item.img ? <img src={item.img} alt={item.name} style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";}}/> : item.emoji}
               </div>
               {/* Info */}
               <div style={{padding:"10px 10px 8px"}}>
@@ -1027,9 +1036,10 @@ function FoodConfirmPage({ cart, total, customer, onHome }) {
         {/* Order ticket */}
         <div style={{background:"#18181b",borderRadius:20,overflow:"hidden",border:"1px solid #27272a",marginBottom:16}}>
           {/* Header */}
-          <div style={{height:80,background:"linear-gradient(135deg,#1a0f00,#5a2d00)",display:"flex",alignItems:"center",padding:16,gap:12,position:"relative"}}>
-            <div style={{position:"absolute",right:16,fontSize:50,opacity:0.15}}>🍔</div>
-            <div>
+          <div style={{height:100,position:"relative",display:"flex",alignItems:"center",padding:16,gap:12,overflow:"hidden"}}>
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" alt="Food" style={{position:"absolute",inset:0,width:"100%",height:"100%",objectFit:"cover"}}/>
+            <div style={{position:"absolute",inset:0,background:"linear-gradient(to right,rgba(0,0,0,0.85),rgba(0,0,0,0.3))"}}/>
+            <div style={{position:"relative",zIndex:1}}>
               <div style={{color:"white",fontWeight:700,fontSize:18}}>Food &amp; Drinks Order</div>
               <div style={{color:"#FFD700",fontSize:12}}>Gidan Kallo Canteen</div>
             </div>
@@ -1190,10 +1200,11 @@ function HomePage({ setPage, reviews, onRateClick, onSeeAll }) {
         </div>
       </div>
       <div style={{margin:`0 ${p}px`,borderRadius:r.isMobile?18:24,overflow:"hidden",position:"relative",height:r.isDesktop?380:r.isTablet?320:260}}>
-        <div style={{width:"100%",height:"100%",background:hero.gradient,position:"relative"}}>
+        <div style={{width:"100%",height:"100%",position:"relative"}}>
+          <img src={hero.poster} alt={hero.title} style={{width:"100%",height:"100%",objectFit:"cover",position:"absolute",inset:0}} onError={e=>{e.target.style.display="none"}}/>
+          <div style={{position:"absolute",inset:0,background:hero.gradient,opacity:0.4}}/>
           <div style={{position:"absolute",top:-40,right:-40,width:200,height:200,borderRadius:"50%",background:"rgba(255,255,255,0.04)"}}/>
-          <div style={{position:"absolute",right:r.isDesktop?40:20,top:"50%",transform:"translateY(-60%)",fontSize:r.isDesktop?200:r.isTablet?170:140,fontWeight:900,color:"rgba(255,255,255,0.07)",fontFamily:"serif",lineHeight:1,userSelect:"none"}}>{hero.posterLetter}</div>
-          <div style={{position:"absolute",inset:0,background:"linear-gradient(to top,rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.1) 55%,transparent 100%)"}}>
+          <div style={{position:"absolute",inset:0,background:"linear-gradient(to top,rgba(0,0,0,0.92) 0%,rgba(0,0,0,0.3) 45%,transparent 100%)"}}>
             <div style={{position:"absolute",top:12,left:12,display:"flex",alignItems:"center",gap:6,background:"rgba(0,0,0,0.55)",borderRadius:20,padding:"5px 10px"}}>
               <GKLogo size={16}/><span style={{color:"#FFD700",fontSize:9,fontWeight:700,letterSpacing:2}}>GIDAN KALLO</span>
             </div>
@@ -1226,29 +1237,29 @@ function HomePage({ setPage, reviews, onRateClick, onSeeAll }) {
         </div>
         <div style={{display:"grid",gridTemplateColumns:r.isDesktop?"1fr 1fr":"none",gap:r.isDesktop?16:0}}>
           {!r.isDesktop && <div style={{display:"flex",gap:12,overflowX:"auto",paddingBottom:4}}>
-            {[{gradient:"linear-gradient(135deg,#0d2e0d,#1a5a1a)",badge:null,dot:"#22c55e",dotLabel:"AVAILABLE NOW",title:"5-a-Side Turf A",sub:"Starting from ₦5,000/hr",icon:"⚽"},{gradient:"linear-gradient(135deg,#1a1200,#3d2e00)",badge:{label:"TOURNAMENT",color:"#f97316"},dot:null,dotLabel:null,title:"Weekend League",sub:"Register your team",icon:"🏆"}].map((c,i)=>(
-              <div key={i} onClick={()=>setPage("turf")} style={{minWidth:"65%",borderRadius:14,overflow:"hidden",position:"relative",height:140,flexShrink:0,background:c.gradient,cursor:"pointer"}}>
-                <div style={{position:"absolute",right:10,top:"50%",transform:"translateY(-50%)",fontSize:60,opacity:0.15}}>{c.icon}</div>
-                <div style={{position:"absolute",inset:0,background:"linear-gradient(to top,rgba(0,0,0,0.6),transparent)"}}>
+            {[{img:"https://images.unsplash.com/photo-1624880357913-a8539238245b?w=800&q=80",badge:null,dot:"#22c55e",dotLabel:"AVAILABLE NOW",title:"5-a-Side Turf A",sub:"Starting from ₦5,000/hr"},{img:"https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=800&q=80",badge:{label:"TOURNAMENT",color:"#f97316"},dot:null,dotLabel:null,title:"Weekend League",sub:"Register your team"}].map((c,i)=>(
+              <div key={i} onClick={()=>setPage("turf")} style={{minWidth:"65%",borderRadius:14,overflow:"hidden",position:"relative",height:140,flexShrink:0,cursor:"pointer"}}>
+                <img src={c.img} alt={c.title} style={{position:"absolute",inset:0,width:"100%",height:"100%",objectFit:"cover"}}/>
+                <div style={{position:"absolute",inset:0,background:"linear-gradient(to top,rgba(0,0,0,0.8),rgba(0,0,0,0.1))"}}>
                   {c.badge&&<div style={{position:"absolute",top:10,left:10,background:c.badge.color,color:"white",fontSize:9,fontWeight:700,padding:"2px 8px",borderRadius:5}}>{c.badge.label}</div>}
                   <div style={{position:"absolute",bottom:12,left:12}}>
                     {c.dot&&<div style={{color:c.dot,fontSize:10,fontWeight:700,marginBottom:2}}>● {c.dotLabel}</div>}
                     <div style={{color:"white",fontWeight:700,fontSize:15}}>{c.title}</div>
-                    <div style={{color:"#9ca3af",fontSize:12}}>{c.sub}</div>
+                    <div style={{color:"#d1d5db",fontSize:12}}>{c.sub}</div>
                   </div>
                 </div>
               </div>
             ))}
           </div>}
-          {r.isDesktop && [{gradient:"linear-gradient(135deg,#0d2e0d,#1a5a1a)",badge:null,dot:"#22c55e",dotLabel:"AVAILABLE NOW",title:"5-a-Side Turf A",sub:"Starting from ₦5,000/hr",icon:"⚽"},{gradient:"linear-gradient(135deg,#1a1200,#3d2e00)",badge:{label:"TOURNAMENT",color:"#f97316"},dot:null,dotLabel:null,title:"Weekend League",sub:"Register your team",icon:"🏆"}].map((c,i)=>(
-            <div key={i} onClick={()=>setPage("turf")} style={{borderRadius:18,overflow:"hidden",position:"relative",height:160,background:c.gradient,cursor:"pointer"}}>
-              <div style={{position:"absolute",right:16,top:"50%",transform:"translateY(-50%)",fontSize:70,opacity:0.15}}>{c.icon}</div>
-              <div style={{position:"absolute",inset:0,background:"linear-gradient(to top,rgba(0,0,0,0.6),transparent)"}}>
+          {r.isDesktop && [{img:"https://images.unsplash.com/photo-1624880357913-a8539238245b?w=800&q=80",badge:null,dot:"#22c55e",dotLabel:"AVAILABLE NOW",title:"5-a-Side Turf A",sub:"Starting from ₦5,000/hr"},{img:"https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=800&q=80",badge:{label:"TOURNAMENT",color:"#f97316"},dot:null,dotLabel:null,title:"Weekend League",sub:"Register your team"}].map((c,i)=>(
+            <div key={i} onClick={()=>setPage("turf")} style={{borderRadius:18,overflow:"hidden",position:"relative",height:160,cursor:"pointer"}}>
+              <img src={c.img} alt={c.title} style={{position:"absolute",inset:0,width:"100%",height:"100%",objectFit:"cover"}}/>
+              <div style={{position:"absolute",inset:0,background:"linear-gradient(to top,rgba(0,0,0,0.8),rgba(0,0,0,0.1))"}}>
                 {c.badge&&<div style={{position:"absolute",top:12,left:12,background:c.badge.color,color:"white",fontSize:10,fontWeight:700,padding:"3px 10px",borderRadius:6}}>{c.badge.label}</div>}
                 <div style={{position:"absolute",bottom:16,left:16}}>
                   {c.dot&&<div style={{color:c.dot,fontSize:11,fontWeight:700,marginBottom:2}}>● {c.dotLabel}</div>}
                   <div style={{color:"white",fontWeight:700,fontSize:18}}>{c.title}</div>
-                  <div style={{color:"#9ca3af",fontSize:13}}>{c.sub}</div>
+                  <div style={{color:"#d1d5db",fontSize:13}}>{c.sub}</div>
                 </div>
               </div>
             </div>
@@ -1256,13 +1267,13 @@ function HomePage({ setPage, reviews, onRateClick, onSeeAll }) {
         </div>
       </div>
       <div style={{padding:`0 ${p}px ${p}px`}}>
-        <div onClick={()=>setPage("games")} style={{borderRadius:r.isMobile?14:18,overflow:"hidden",position:"relative",height:r.isMobile?140:170,background:"linear-gradient(135deg,#1a0520,#3d0d4e)",cursor:"pointer"}}>
-          <div style={{position:"absolute",right:10,top:"50%",transform:"translateY(-50%)",fontSize:r.isMobile?80:100,opacity:0.12}}>🎮</div>
-          <div style={{position:"absolute",inset:0,background:"linear-gradient(to top,rgba(0,0,0,0.6),transparent)"}}>
+        <div onClick={()=>setPage("games")} style={{borderRadius:r.isMobile?14:18,overflow:"hidden",position:"relative",height:r.isMobile?140:170,cursor:"pointer"}}>
+          <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=800&q=80" alt="Games Lounge" style={{position:"absolute",inset:0,width:"100%",height:"100%",objectFit:"cover"}}/>
+          <div style={{position:"absolute",inset:0,background:"linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0.2))"}}>
             <div style={{position:"absolute",bottom:r.isMobile?12:20,left:r.isMobile?12:20}}>
               <div style={{color:"#ec4899",fontSize:r.isMobile?10:12,fontWeight:700,marginBottom:2}}>🎮 GAME LOUNGE</div>
               <div style={{color:"white",fontWeight:700,fontSize:r.isMobile?17:20}}>Virtual Reality Zone</div>
-              <div style={{color:"#9ca3af",fontSize:r.isMobile?12:14}}>PS5, VR, and Retro Arcade available.</div>
+              <div style={{color:"#d1d5db",fontSize:r.isMobile?12:14}}>PS5, VR, and Retro Arcade available.</div>
             </div>
           </div>
         </div>
@@ -1275,8 +1286,8 @@ function HomePage({ setPage, reviews, onRateClick, onSeeAll }) {
         <div style={{display:"grid",gridTemplateColumns:`repeat(${r.cols.canteen},1fr)`,gap:12}}>
           {canteen.map(c=>(
             <div key={c.name} style={{background:"#18181b",border:"1px solid #27272a",borderRadius:r.isMobile?14:18,overflow:"hidden"}}>
-              <div style={{height:r.isMobile?90:110,background:`linear-gradient(135deg,${c.color}22,${c.color}44)`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:r.isMobile?40:48}}>
-                {c.name.includes("Popcorn")?"🍿":c.name.includes("Burger")?"🍔":"🥤"}
+              <div style={{height:r.isMobile?90:110,background:`linear-gradient(135deg,${c.color}22,${c.color}44)`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:r.isMobile?40:48,overflow:"hidden"}}>
+                {c.img ? <img src={c.img} alt={c.name} style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";}}/> : (c.name.includes("Popcorn")?"🍿":c.name.includes("Burger")?"🍔":"🥤")}
               </div>
               <div style={{padding:r.isMobile?"8px 10px":"12px 14px"}}>
                 <div style={{color:"white",fontWeight:700,fontSize:r.isMobile?13:15}}>{c.name}</div>
@@ -1341,8 +1352,8 @@ function CinemaPage({ setPage, setSelected }) {
           <div key={m.id} onClick={()=>{setSelected(m);setPage("movie");}} style={{background:"#18181b",border:"1px solid #27272a",borderRadius:r.isMobile?16:20,overflow:"hidden",cursor:"pointer"}}>
             <div style={{display:"flex",gap:12,padding:r.isMobile?12:16}}>
               <div style={{position:"relative",flexShrink:0}}>
-                <div style={{width:r.isMobile?80:100,height:r.isMobile?110:140,borderRadius:r.isMobile?10:14,background:m.gradient,display:"flex",alignItems:"center",justifyContent:"center",overflow:"hidden",position:"relative"}}>
-                  <span style={{fontSize:r.isMobile?48:60,fontWeight:900,color:"rgba(255,255,255,0.15)",fontFamily:"serif"}}>{m.posterLetter}</span>
+                <div style={{width:r.isMobile?80:100,height:r.isMobile?110:140,borderRadius:r.isMobile?10:14,overflow:"hidden",position:"relative"}}>
+                  <img src={m.poster} alt={m.title} style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";e.target.parentElement.style.background=m.gradient;}}/>
                   <div style={{position:"absolute",inset:0,background:"linear-gradient(to bottom,transparent 40%,rgba(0,0,0,0.5))"}}/>
                 </div>
                 <div style={{position:"absolute",top:4,left:4,background:m.badgeColor,color:"white",fontSize:r.isMobile?8:9,fontWeight:700,padding:"2px 5px",borderRadius:4,lineHeight:1.3}}>{m.badge}</div>
@@ -1374,8 +1385,9 @@ function MovieDetailPage({ movie, setPage, onBook }) {
   return (
     <div style={{paddingBottom:100}}>
       <div style={{position:"relative",height:260}}>
-        <div style={{width:"100%",height:"100%",background:movie.gradient,position:"relative"}}>
-          <div style={{position:"absolute",right:20,top:"30%",fontSize:160,fontWeight:900,color:"rgba(255,255,255,0.06)",fontFamily:"serif",lineHeight:1}}>{movie.posterLetter}</div>
+        <div style={{width:"100%",height:"100%",position:"relative"}}>
+          <img src={movie.poster} alt={movie.title} style={{width:"100%",height:"100%",objectFit:"cover",position:"absolute",inset:0}} onError={e=>{e.target.style.display="none";e.target.parentElement.style.background=movie.gradient;}}/>
+          <div style={{position:"absolute",inset:0,background:movie.gradient,opacity:0.3}}/>
           <div style={{position:"absolute",inset:0,background:"linear-gradient(to bottom,rgba(0,0,0,0.2),#09090b)"}}/>
           <button onClick={()=>setPage("cinema")} style={{position:"absolute",top:16,left:16,background:"rgba(0,0,0,0.55)",border:"none",borderRadius:"50%",width:36,height:36,color:"white",cursor:"pointer",fontSize:18,display:"flex",alignItems:"center",justifyContent:"center"}}>←</button>
           <div style={{position:"absolute",top:16,right:16,background:movie.badgeColor,color:"white",fontSize:11,fontWeight:700,padding:"4px 10px",borderRadius:8}}>{movie.badge}</div>
@@ -1480,7 +1492,9 @@ function SnacksPage({ movie, showtime, seats, onBack, onContinue }) {
       <div style={{padding:"0 16px 0"}}>
         {snackItems.map(item=>(
           <div key={item.id} style={{background:"#18181b",border:"1px solid #27272a",borderRadius:14,padding:14,marginBottom:10,display:"flex",alignItems:"center",gap:12}}>
-            <span style={{fontSize:32,flexShrink:0}}>{item.icon}</span>
+            <div style={{width:56,height:56,borderRadius:12,overflow:"hidden",flexShrink:0,background:"#27272a"}}>
+              <img src={item.img} alt={item.name} style={{width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";}}/>
+            </div>
             <div style={{flex:1}}><div style={{color:"white",fontWeight:700,fontSize:15}}>{item.name}</div><div style={{color:"#9ca3af",fontSize:12,marginTop:2}}>{item.desc}</div><div style={{color:"#FFD700",fontWeight:700,fontSize:14,marginTop:4}}>₦{item.price.toLocaleString()}</div></div>
             <div style={{display:"flex",alignItems:"center",gap:10,flexShrink:0}}>
               <button onClick={()=>change(item.id,-1)} style={{width:32,height:32,borderRadius:"50%",background:"#27272a",border:"1px solid #374151",color:"white",fontSize:18,cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center"}}>−</button>
@@ -1548,10 +1562,14 @@ function PaymentPage({ movie, showtime, seats, snacks, customer, onBack, onPay }
       </div>
       <CheckoutProgress step={3}/>
       <div style={{padding:"0 16px"}}>
-        <div style={{background:"linear-gradient(135deg,#1a1200,#3d2e00)",border:"1px solid rgba(255,215,0,0.3)",borderRadius:16,padding:16,marginBottom:16,textAlign:"center"}}>
-          <div style={{color:"#9ca3af",fontSize:12,marginBottom:4}}>AMOUNT DUE</div>
-          <div style={{color:"#FFD700",fontWeight:900,fontSize:36}}>₦{total.toLocaleString()}</div>
-          <div style={{color:"#9ca3af",fontSize:12,marginTop:4}}>for {customer.name}</div>
+        <div style={{position:"relative",border:"1px solid rgba(255,215,0,0.3)",borderRadius:16,padding:16,marginBottom:16,textAlign:"center",overflow:"hidden"}}>
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" alt="Food" style={{position:"absolute",inset:0,width:"100%",height:"100%",objectFit:"cover"}}/>
+          <div style={{position:"absolute",inset:0,background:"rgba(0,0,0,0.82)"}}/>
+          <div style={{position:"relative",zIndex:1}}>
+            <div style={{color:"#9ca3af",fontSize:12,marginBottom:4}}>AMOUNT DUE</div>
+            <div style={{color:"#FFD700",fontWeight:900,fontSize:36}}>₦{total.toLocaleString()}</div>
+            <div style={{color:"#9ca3af",fontSize:12,marginTop:4}}>for {customer.name}</div>
+          </div>
         </div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10,marginBottom:16}}>
           {methods.map(m=>(
@@ -1593,8 +1611,9 @@ function TicketPage({ movie, showtime, seats, snacks, customer, total, onHome })
           <div><div style={{color:"white",fontWeight:700,fontSize:15}}>Booking Confirmed!</div><div style={{color:"#9ca3af",fontSize:12,marginTop:2}}>Ref: <span style={{color:"#22c55e",fontFamily:"monospace",fontWeight:700}}>{ref}</span></div></div>
         </div>
         <div style={{background:"#18181b",borderRadius:20,overflow:"hidden",border:"1px solid #27272a",marginBottom:16}}>
-          <div style={{height:100,background:movie.gradient,position:"relative",display:"flex",alignItems:"flex-end",padding:"12px"}}>
-            <div style={{position:"absolute",inset:0,background:"linear-gradient(to bottom,transparent,rgba(0,0,0,0.6))"}}/>
+          <div style={{height:100,position:"relative",display:"flex",alignItems:"flex-end",padding:"12px",overflow:"hidden"}}>
+            <img src={movie.poster} alt={movie.title} style={{position:"absolute",inset:0,width:"100%",height:"100%",objectFit:"cover"}} onError={e=>{e.target.style.display="none";e.target.parentElement.style.background=movie.gradient;}}/>
+            <div style={{position:"absolute",inset:0,background:"linear-gradient(to bottom,transparent,rgba(0,0,0,0.7))"}}/>
             <div style={{position:"absolute",top:8,right:8}}><GKLogo size={28}/></div>
             <div style={{position:"relative"}}><div style={{color:"white",fontWeight:700,fontSize:20}}>{movie.title}</div><div style={{color:"#FFD700",fontSize:12}}>{showtime.time} • {movie.dome} • {showtime.type}</div></div>
           </div>
