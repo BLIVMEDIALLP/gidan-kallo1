@@ -24,9 +24,9 @@ const IMAGES = {
 
   // ── MOVIE POSTERS (Hero Banner + Cinema Page) ──
   movies: {
-    taqdeer:   "/taqdeer.jpg",
-    hakeem:    "/hakeem.jpg",
-    rigarAro:  "/rigar-aro.jpg",
+    taqdeer:   "/TSANDAURI.jpeg",
+    hakeem:    "/KAMANNI.jpeg",
+    rigarAro:  "/FAISA.jpeg",
     varanasi:  "/varanasi.jpg",
   },
 
