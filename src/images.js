@@ -24,9 +24,9 @@ const IMAGES = {
 
   // ── MOVIE POSTERS (Cinema Page cards + detail) ──
   movies: {
-    taqdeer:   "/TSANDAURI.jpeg",
-    hakeem:    "/KAMANNI.jpeg",
-    rigarAro:  "/FAISA.jpeg",
+    TSANDAURI:   "/TSANDAURI.jpeg",
+    KAMANNI:    "/KAMANNI.jpeg",
+    FANSA:  "/FAISA.jpeg",
     varanasi:  "/VARANASI.webp",
   },
 
@@ -34,9 +34,9 @@ const IMAGES = {
   // If you have wide/landscape versions of posters, put them here.
   // If not, leave same as movies — the layout handles both well.
   heroBanners: {
-     taqdeer:   "/TSANDAURI.jpeg",
-    hakeem:    "/KAMANNI.jpeg",
-    rigarAro:  "/FAISA.jpeg",
+     TSANDAURI:   "/TSANDAURI.jpeg",
+    KAMANNI:    "/KAMANNI.jpeg",
+    FANSA:  "/FAISA.jpeg",
     varanasi:  "/VARANASI.webp",
   },
 
