@@ -27,7 +27,7 @@ const IMAGES = {
     taqdeer:   "/TSANDAURI.jpeg",
     hakeem:    "/KAMANNI.jpeg",
     rigarAro:  "/FAISA.jpeg",
-    varanasi:  "/varanasi.jpg",
+    varanasi:  "/VARANASI.webp",
   },
 
   // ── HERO BANNERS (Homepage slider — landscape images preferred) ──
@@ -37,7 +37,7 @@ const IMAGES = {
      taqdeer:   "/TSANDAURI.jpeg",
     hakeem:    "/KAMANNI.jpeg",
     rigarAro:  "/FAISA.jpeg",
-    varanasi:  "/varanasi.jpg",
+    varanasi:  "/VARANASI.webp",
   },
 
   // ── HOMEPAGE BANNERS ──
